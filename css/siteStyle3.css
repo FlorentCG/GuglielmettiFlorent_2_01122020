@@ -45,9 +45,9 @@ h2{
   .hebergement{
       background-color: #F2F2F2;
       border: 2px ;
-      padding: .5em;
+    
       
-      width: 60%;
+      width: 65%;
       
       border-radius: 5%;
       margin-top: 10px;
@@ -65,12 +65,11 @@ h2{
   }
   
   .activités {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 
     
     border: 2px ;
-      padding: .5em;
+      
       
       
       
@@ -93,7 +92,7 @@ h2{
   
   .listings_item{
     
-    padding: 2px 0;
+   
     display: flex;
     width: 90%;
     height:90%;
@@ -115,10 +114,6 @@ h2{
      line-height:18px;
   }
   
-  
-  
-    
-  }
  
   .listings_content{
     display:flex;
@@ -130,13 +125,13 @@ h2{
   
   .main_content_hebergement{
     
-    padding: 10;
+   
     border-radius: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 5px;
+    margin: 10px 10px 10px 10px;
     box-shadow: 10px 5px 5px;
   }
   
@@ -155,6 +150,13 @@ h2{
       margin-top: 10px;
   }
   
+  .mosaique2{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+  }
   
   
   
@@ -173,4 +175,21 @@ h2{
     background-color: red;
     display: flex;
     max-height: 200px;
+  }
+
+  .main_content_hebergement1{
+    
+    padding: 10;
+    border-radius: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 10px 5px 5px;
+
+    grid-column-start: 1; 
+   grid-column-end: 1; 
+   grid-row-start: 1; 
+   grid-row-end: 3; 
   }
