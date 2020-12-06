@@ -4,7 +4,7 @@
 .inner
 {
     display: inline-block;
-    
+    border-radius: 60px;
 }
     
 .msgBtn{
@@ -16,8 +16,41 @@
 {
     width:100%;
     text-align: center;
+    display: inline;
 }
-
+.search{
+  border: 1px solid #c4c4c4;
+  width: 500px;
+  overflow-x: hidden;
+  display: flex;
+  border-radius: 50px;
+  font-size: 18px;
+  
+  left:30%;
+  top:200px;
+}
+.search input{
+  width: 300px;
+  height:65px;
+  border: none;
+  padding: 8px 20px;
+  outline: none;
+  font-size: 18px;
+ 
+}
+.button-src{
+  padding: 10px 110px; 
+  display: inline-block;
+}
+.button-src button{
+  padding: 10px 35px 10px 35px;
+  border-radius: 50px;
+  border: none;
+  margin: 9px 7px;
+  background-color: rgba(0, 101, 252 );
+  color: #ffffff;
+  font-size: 18px;
+}
 
 h2{
   font-size: 22px;    
@@ -34,12 +67,18 @@ h2{
    background-color: #F2F2F2;
       display: flex;
       justify-content: space-around;
-      font-size: 15px;
+      font-size: 22px;
+      padding: 0.5em;
   }
   
   body {
       font-family: 'Raleway';
       font-size: 22px;
+  }
+
+  .footer-row{
+    font-size: 22px;
+
   }
   
   .hebergement{
@@ -162,11 +201,11 @@ h2{
 
   .main_content_pop {
     width: 90%;
-    height: 200px;
+    
     border-radius: 10%;
     display: flex;
-    
-    margin: 10px 10px 10px 10px;
+    background-color: white;
+    margin: 1em auto 1em;
     box-shadow: 10px 5px 5px grey;
   }
 
@@ -235,4 +274,15 @@ h2{
     max-height: fit-content;
     font-size:22px;
     border-radius: 10%;
+  }
+
+  i.fas {
+    position: relative;
+   float: left;
+    border-radius: 60px;
+    object-fit: cover;
+    padding: 0.5em 0.6em;
+    background-color: rgba(0, 101, 252, 0.3);
+    color: rgba(0, 101, 252 )
+  
   }
