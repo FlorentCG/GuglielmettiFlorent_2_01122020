@@ -24,24 +24,28 @@ echo "Hello World" > index.html
         </h1>
         
         <div class="search">
-            <input type="text"placeholder=>
+        <div class="location"> <i class="fas fa-map-marker-alt"></i></div>
+            <input type="text"placeholder="Marseille, France">
             <div class="button-src">
                 <button>Rechercher</button>
             </div>
          </div>
     
     
-        <div id="outer">
-            <div class="inner"><button type="submit" class="msgBtn" onClick="return false;" >Filtres</button></div>
-            <div class="inner"><button type="submit" class="msgBtn" onClick="return false;" >Economique</button></div>
-            <div class="inner"><button type="submit" class="msgBtn" onClick="return false;" >Romantique</button></div>
-            <div class="inner"><button type="submit" class="msgBtn" onClick="return false;">Animaux autorisés
-                <i class="fas fa-dog"></i>
-            </button></div>
+        
+            <div class="inner">
+               
+         <div class=inner_titre><p>Filtres</p></div>
+         <div class=inner_text> <i class="fas fa-money-bill-wave"></i> Economique</div>
+         <div class=inner_text> <i class="fas fa-child"></i> Familial</div>
+         <div class=inner_text> <i class="fas fa-heart"></i> Romantique</div>
+         <div class=inner_text> <i class="fas fa-dog"></i> Animaux autorisés</div>
+                
+            </div>
            
-            <i class="fas fa-dog"></i>
             
-        </div> 
+            
+        
             
         
         
@@ -68,15 +72,16 @@ echo "Hello World" > index.html
                 <div class= "listings_content">                  
                             <span class ="greyText">Hôtel de la mer</span>
                             <h2>Nuit à partir de 35euros</h2>               
-                    
+                           
+                            <div class="stars">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
                 </div>
-                <div class="stars">
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                  </div>
+                
             </div>
             
             <div class= "main_content_hebergement">
@@ -92,7 +97,13 @@ echo "Hello World" > index.html
                         <span class ="greyText">Hôtel de la mer</span>
                         <h2>Nuit à partir de 35euros</h2>
                     
-                
+                        <div class="stars">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
             </div>
         </div>
             
@@ -109,7 +120,13 @@ echo "Hello World" > index.html
                     <span class ="greyText">Hôtel de la mer</span>
                     <h2>Nuit à partir de 35euros</h2>
                 
-            
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
        
                 </div>
             </div>
@@ -126,7 +143,13 @@ echo "Hello World" > index.html
         
                 <span class ="greyText">Hôtel de la mer</span>
                 <h2>Nuit à partir de 35euros</h2>
-            
+                <div class="stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
         
        </div>
      </div>
@@ -143,7 +166,13 @@ echo "Hello World" > index.html
     
             <span class ="greyText">Hôtel de la mer</span>
             <h2>Nuit à partir de 35euros</h2>
-        
+            <div class="stars">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
     
    </div>
      </div>
@@ -160,7 +189,13 @@ echo "Hello World" > index.html
     
             <span class ="greyText">Hôtel de la mer</span>
             <h2>Nuit à partir de 35euros</h2>
-        
+            <div class="stars">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
     
      </div>
      </div>              
@@ -173,6 +208,8 @@ echo "Hello World" > index.html
      <div class="populaire">
         <h2>Les plus populaires</h2>
         
+        <div class="mosaique2">
+
         <div class= "main_content_pop">
             
                 <div class= "listings_item">
@@ -234,7 +271,7 @@ echo "Hello World" > index.html
             </div>
             
         </div>
-
+    </div>
 	    </div>
  </section>   
       
@@ -242,7 +279,7 @@ echo "Hello World" > index.html
 
  <div class="activités">
 		<h2>Activités à Marseille</h2>
-        <div class="mosaique2">
+        <div class="mosaique3">
 
         <div class= "main_content_hebergement1">
                 
