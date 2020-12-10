@@ -18,11 +18,29 @@ echo "Hello World" > index.html
 <body>
 
     <header>
-	
+    
+        <nav class="nav">
+				
+            <ul class="menu">
+                
+                <li> <a href=#hebergement>Hébergement</a></li>
+                <li> <a href=#activites>Activités</a></li>
+                
+            </ul>
+            <button class="inscription" type="button">S'inscrire</button>
+        </nav>
+
         <h1 class="logo">
             <img src="images/logo/Reservia@3x.png" alt="exemple de texte alternatif"/>
         </h1>
-        
+
+       
+
+
+
+
+
+
         <div class="search">
         <div class="location"> <i class="fas fa-map-marker-alt"></i></div>
             <input type="text"placeholder="Marseille, France">
@@ -55,7 +73,7 @@ echo "Hello World" > index.html
     
 <section class="corps">
         
-    <div class = "hebergement">
+    <div id = "hebergement">
 			
 	    <h2>Hébergement à Marseille</h2>
         
@@ -275,7 +293,7 @@ echo "Hello World" > index.html
 	    </div>
  </section>   
       
- <section class="activites">
+ <section id="activites">
 
  <div class="activités">
 		<h2>Activités à Marseille</h2>
