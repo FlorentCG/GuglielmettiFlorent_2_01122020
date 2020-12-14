@@ -9,22 +9,15 @@ h1{
   font-size:35px;
 }
 
-h2{
-  font-size: 22px;    
-  }
 
-  body {
+
+body {
     font-family: 'Raleway';
     font-size: 22px;
     
 }
 
-.logo{
-  
-  text-align:left;
-  
 
-}
 
 
 .nav{
@@ -45,24 +38,34 @@ h2{
 }
 
 .nav a
-{   margin-top:0px;
+{   
 	padding: 10px;
-	display: block;
+	
 	
 	text-decoration: none;
 	color: #444D56;
-  font-size: 20px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
 .inscription{
-  background: none;
-	color: blue;
-  font-size: 20px;
-  border:none;
-  text-align:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.inscription p{
   
-  margin: 0px;
+	color: blue;
+  font-size: 22px;
+  
+  
+  
 
   
 
@@ -83,18 +86,15 @@ a:hover{
 .menu
 {
 	display: flex;
-	flex-direction: row;
+	
   justify-content: flex-end;
-  align-items: top;
+ 
 
 }
 
 
 
-.inner
-{
-	width: max-content;  
-}
+
 
 .inner_titre{
   display: inline-block;
@@ -110,6 +110,12 @@ a:hover{
   padding-right: 1em;
   
 
+}
+
+.inner_text:hover{
+	color: #1a1c1d;
+  background-color: #158ad8;
+  transition-duration: 1s;
 }
 
 .inner .inner_text .fas {
@@ -129,7 +135,6 @@ a:hover{
   
   
      padding: 20px;
-    border-radius: none;
     background-color: #e5e5e5;
    
     
@@ -144,7 +149,6 @@ a:hover{
   width: 400px;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
   border-radius: 50px;
   
  
@@ -155,7 +159,7 @@ a:hover{
  
 }
 
-.button-src button{
+.button-web button{
   padding: 20px;
   
   border: none;
@@ -164,6 +168,10 @@ a:hover{
   background-color: rgba(0, 101, 252 );
   color: #ffffff;
   font-size: 18px;
+}
+
+.button_mobile{
+  visibility: hidden;
 }
 
 .info{
@@ -194,7 +202,7 @@ a:hover{
   
   #hebergement{
       background-color: #F2F2F2;
-      border: 2px ;
+      
     
       padding: .5em;
       width: 65%;
@@ -205,23 +213,18 @@ a:hover{
   
   .populaire {
       background-color: #F2F2F2;
-      border: 2px ;
+      
       padding: .5em;
      
-      width: 30%;
+      width: 33%;
       
       border-radius: 5%;
       margin: 10px;
   }
   
   .activités {
-    background-color: white;
-      
+
       padding: .5em;
-     
-     
-      
-      border-radius: 5%;
       margin: 10px;
   }
   
@@ -238,39 +241,44 @@ a:hover{
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-height: 200px;
+    height: 200px;
   }
 
   .listings_item_pop{
     
-    
+    position:relative;
     overflow: hidden;
     width: 100%;
     max-height:200px;
     border-radius: 10% 0% 0% 10%;
+    
   }
   .listings_image{
-    
-    
-      
-      
       object-fit: cover;
       height: 100%;
       width: 100%;
+      
+      position: absolute;
+      
       
   }
   .listings_image_pop{
     
-    border-radius: 10% 0% 0% 10%;
-      
-      
+   
+      position: absolute;
       object-fit: cover;
       height: 100%;
       width: 100%;
-      
+      max-width: 270px;
   }
 
-
+  .listings_image_heb{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+  }
   
   .greyText{
      font-size: 22px;
@@ -280,8 +288,16 @@ a:hover{
  
   .listings_content{
     display:flex;
+    
+    flex-direction: column;
+    padding: 0.5em;
+    border-radius: 10%;
+  }
+
+  .listings_content_pop{
+    display:flex;
     justify-content: space-around;
-    width: auto;
+    width: 100%;
     height: auto;
     flex-direction: column;
     padding: 0.5em;
@@ -292,15 +308,8 @@ a:hover{
   
     display:grid;
     grid-template-columns: repeat(3, 1fr) ;
-
     
-      border: 2px ;
-      padding: .5em;
-      
-      
-      
-      border-radius: 5%;
-      margin-top: 10px;
+     
   }
   
 .mosaique2{
@@ -329,7 +338,7 @@ a:hover{
 
   .main_content_pop {
    
-    
+    width: 100%;
     border-radius: 10%;
     display: flex;
     background-color: white;
@@ -342,10 +351,9 @@ a:hover{
     
     border-radius: 10%;
     
-    display: flex;
-    flex-direction: column;
+   
     background-color: white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px ;
     box-shadow: 10px 5px 5px grey;
   }
 
@@ -373,6 +381,7 @@ a:hover{
     height:90%;
     font-size:22px;
     border-radius: 10% 10% 0% 0%;
+    position:relative;
   }
 
   .main_content_hebergement2{
@@ -397,8 +406,8 @@ a:hover{
     overflow: hidden;
     display: flex;
     width: 100%;
-    height:90%;
-    
+    height:100%;
+    position: relative;
     font-size:22px;
     border-radius: 10% 10% 0% 0%;
 
@@ -412,7 +421,7 @@ a:hover{
 
    @media screen and (max-width: 800px)   {
     .body{
-      font-size: 22px;
+      font-size: auto;
 
 
     }
@@ -423,6 +432,55 @@ a:hover{
 
 
     }
+
+    .nav{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .menu{
+        grid-column: 1/3;
+        grid-row: 2;
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .inscription{
+      grid-column-start:2;
+      grid-column-end:3;
+      grid-row-start:1;
+      grid-row-end:1;
+      display: flex;
+      justify-content: flex-end;
+      font-weight: bold;
+
+    }
+
+    .search{
+
+      width: 100%;
+      border-radius: 1em;
+    }
+
+    
+
+    .button_mobile{
+      padding: 20px;
+  
+  border: none;
+  object-fit: contain;
+  
+  background-color: rgba(0, 101, 252 );
+  color: #ffffff;
+  font-size: 18px;
+    }
+
+    
+
+    
+
+    
 
     .inner{
 
@@ -488,30 +546,45 @@ a:hover{
       
       
     }
-
+    .listings_image_heb{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+    }
     
 
     .listings_item1{
+    
       overflow: hidden;
-      
-
+      display: flex;
+      width: 100%;
+      height:90%;
+      font-size:22px;
+      border-radius: 10% 10% 0% 0%;
+      position:relative;
     }
 
     .listings_item2{
+    
       overflow: hidden;
-
+      display: flex;
+      width: 100%;
+      height:100%;
+      position: relative;
+      font-size:22px;
+      border-radius: 10% 10% 0% 0%;
+  
     }
 
     .main_content_hebergement{
     
       
-      border-radius: 10%;
-      
-      display: flex;
-      
-      background-color: white;
-      max-height: 285px;
-      box-shadow: 10px 5px 5px grey;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 10px 5px 5px grey;
+    width: 100%;
 
     }
 
@@ -545,8 +618,85 @@ a:hover{
       border-radius: 10%;
       display: flex;
       background-color: white;
-      max-width: 90%;
-      box-shadow: 10px 5px 5px grey;
+      width: 100%;
+      box-shadow: 10px
+      5px 5px grey;
+    }
+
+    .listings_content_pop{
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 0.5em;
+      border-radius: 10%;
+    }
+
+    .listings_item_pop{
+    
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height:200px;
+      border-radius: 10% 0% 0% 10%;
+    }
+
+    .listings_image_pop{
+    
+      border-radius: 10% 0% 0% 10%;
+        
+        
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        
+    }
+
+
+    .main_content {
+   
+    
+      border-radius: 10%;
+      display: flex;
+      background-color: white;
+      width: 100%;
+      box-shadow: 10px
+      5px 5px grey;
+    }
+
+    .listings_content{
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 0.5em;
+      border-radius: 10% 10% 0% 0%;
+    }
+
+    .listings_item{
+    
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height:200px;
+      
+    }
+
+    .listings_image{
+    
+      border-radius: 10% 10% 0% 0%;
+        
+        
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        
+        
     }
 
     .lists{
