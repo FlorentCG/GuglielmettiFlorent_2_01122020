@@ -13,17 +13,22 @@ h1{
 
 body {
     font-family: 'Raleway';
-    font-size: 22px;
+    font-size: 16px;
+    margin: 0;
     
 }
 
 
+.logo{
 
+  position:absolute; 
+  left:10px;
+}
 
 .nav{
-  display: inline-grid;
-  grid-template-columns:  200px 1000px 100px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   
   
  
@@ -45,29 +50,17 @@ body {
 	text-decoration: none;
 	color: #444D56;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 
 
-.inscription{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-
-}
 
 .inscription p{
   
 	color: blue;
-  font-size: 22px;
-  
-  
-  
 
-  
 
 }
 
@@ -79,16 +72,16 @@ body {
 a:hover{
 
  color: blue;
- padding-top: 0.5rem;
- border-top: 0.5rem solid blue;
+ 
+ border-top: 3px blue solid;
 }
 
 .menu
 {
 	display: flex;
 	
-  justify-content: flex-end;
- 
+  
+  
 
 }
 
@@ -134,7 +127,7 @@ a:hover{
 
   
   
-     padding: 20px;
+     padding: 25px;
     background-color: #e5e5e5;
    
     
@@ -146,10 +139,13 @@ a:hover{
 
 .search{
   border: 1px solid #c4c4c4;
-  width: 400px;
+  
   overflow: hidden;
-  display: flex;
+  display: inline-flex;
+  
+
   border-radius: 50px;
+  
   
  
 }
@@ -160,7 +156,7 @@ a:hover{
 }
 
 .button-web button{
-  padding: 20px;
+  padding: 22px;
   
   border: none;
   object-fit: contain;
@@ -171,7 +167,7 @@ a:hover{
 }
 
 .button_mobile{
-  visibility: hidden;
+  display: none;
 }
 
 .info{
@@ -329,11 +325,13 @@ a:hover{
   
   
   
-  .item{
-    border: 1px solid black;
-    min-width: 100px;
-    min-height: 50px;
-  }
+ .tendance{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+
   
 
   .main_content_pop {
@@ -421,7 +419,9 @@ a:hover{
 
    @media screen and (max-width: 800px)   {
     .body{
-      font-size: auto;
+      padding: 0;
+      margin: 0;
+      border:0;
 
 
     }
@@ -457,17 +457,18 @@ a:hover{
 
     }
 
-    .search{
+    .logo{
+     position: relative;
+     left: 0;
 
-      width: 100%;
-      border-radius: 1em;
     }
+
 
     
 
     .button_mobile{
       padding: 20px;
-  
+      display: inline;
   border: none;
   object-fit: contain;
   
@@ -476,7 +477,11 @@ a:hover{
   font-size: 18px;
     }
 
-    
+  .button-web button {
+
+    display: none;
+  }
+
 
     
 
@@ -492,8 +497,10 @@ a:hover{
     }
     
     .inner_text{
-
+      border:solid 1px;
       margin: 5px;
+      border-radius: 999px;
+      max-width: max-content;
     }
     
     .mosaique {
@@ -512,9 +519,8 @@ a:hover{
       flex-direction: column-reverse;
     }
     #hebergement{
-      display: flex;
-    flex-flow : row wrap;
-    width: auto;
+      border-radius: 1em;
+      width: auto;
       
 
     }
@@ -529,17 +535,25 @@ a:hover{
 
     }
 
+    .tendance {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  }
+
     .populaire{
       display: flex;
     flex-flow : row wrap;
     width:auto;
+    border-radius: 1em;
 
 
     }
 
     .listings_image{
     
-      border-radius: 10% 10% 0% 0%;
+      border-radius: 1em 1em 0% 0%;
       
       
       
@@ -552,36 +566,33 @@ a:hover{
       width: 100%;
       max-width: 100%;
       position: absolute;
+      border-radius: 1em 1em 0% 0%;
     }
     
 
     .listings_item1{
     
+      position: relative;
       overflow: hidden;
-      display: flex;
       width: 100%;
-      height:90%;
-      font-size:22px;
-      border-radius: 10% 10% 0% 0%;
-      position:relative;
+      height: 200px;
+      border-radius: 1em 1em 0% 0%;
     }
 
     .listings_item2{
     
-      overflow: hidden;
-      display: flex;
-      width: 100%;
-      height:100%;
       position: relative;
-      font-size:22px;
-      border-radius: 10% 10% 0% 0%;
+      overflow: hidden;
+      width: 100%;
+      height: 200px;
+      border-radius: 1em 1em 0% 0%;
   
     }
 
     .main_content_hebergement{
     
       
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: white;
     box-shadow: 10px 5px 5px grey;
     width: 100%;
@@ -591,31 +602,25 @@ a:hover{
     .main_content_hebergement1{
     
     
-      border-radius: 10%;
-      
-      display: flex;
-      
-      background-color: white;
-      max-height: 285px;
-      box-shadow: 10px 5px 5px grey;
+      border-radius: 1em;
+    background-color: white;
+    box-shadow: 10px 5px 5px grey;
+    width: 100%;
     }
 
     .main_content_hebergement2{
     
     
-      border-radius: 10%;
-      max-height: 285px;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      margin: 10px 10px 10px 10px;
-      box-shadow: 10px 5px 5px grey;
+      border-radius: 1em;
+    background-color: white;
+    box-shadow: 10px 5px 5px grey;
+    width: 100%;
     }
   
     .main_content_pop {
    
     
-      border-radius: 10%;
+      border-radius: 1em;
       display: flex;
       background-color: white;
       width: 100%;
@@ -627,10 +632,9 @@ a:hover{
       display:flex;
       justify-content: space-around;
       width: 100%;
-      height: auto;
       flex-direction: column;
       padding: 0.5em;
-      border-radius: 10%;
+    
     }
 
     .listings_item_pop{
@@ -639,12 +643,12 @@ a:hover{
       overflow: hidden;
       width: 100%;
       height:200px;
-      border-radius: 10% 0% 0% 10%;
+      border-radius: 1em 0% 0% 1em;
     }
 
     .listings_image_pop{
     
-      border-radius: 10% 0% 0% 10%;
+      border-radius: 1em 0% 0% 1em;
         
         
         object-fit: cover;
@@ -659,7 +663,7 @@ a:hover{
     .main_content {
    
     
-      border-radius: 10%;
+      border-radius: 1em;
       display: flex;
       background-color: white;
       width: 100%;
@@ -674,7 +678,7 @@ a:hover{
       height: auto;
       flex-direction: column;
       padding: 0.5em;
-      border-radius: 10% 10% 0% 0%;
+      border-radius: 1em 1em 0% 0%;
     }
 
     .listings_item{
@@ -683,12 +687,12 @@ a:hover{
       overflow: hidden;
       width: 100%;
       height:200px;
-      
+      border-radius: 1em 1em 0% 0%;
     }
 
     .listings_image{
     
-      border-radius: 10% 10% 0% 0%;
+      border-radius: 1em 1em 0% 0%;
         
         
         object-fit: cover;
