@@ -49,7 +49,7 @@ body {
 	
 	text-decoration: none;
 	color: #444D56;
-  display: flex;
+  
   
 }
 
@@ -99,8 +99,8 @@ a:hover{
   border: solid 1px;
   border-radius: 999px;
   display: inline-block;
-  
   padding-right: 1em;
+  box-shadow: 0.1em 0.1em 0.1em  grey;
   
 
 }
@@ -142,9 +142,10 @@ a:hover{
   
   overflow: hidden;
   display: inline-flex;
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-  border-radius: 50px;
+  border-radius: 1em;
   
   
  
@@ -177,22 +178,33 @@ a:hover{
 
 
  
-  .lists {
+  .list {
   
-   background-color: #F2F2F2;
-      display: flex;
-      justify-content: space-around;
-      font-size: 22px;
+   
+    align-content: flex-start;
+     
       padding: 0.5em;
   }
-  
- 
+  .list ul{
+   
+    padding-left: 0;
 
- 
+  }
+ .list li{
+  
+  margin:5% 0;
+  list-style: none;
+ }
+
+ footer{
+  background-color: #F2F2F2;
+
+ }
 
   .footer-row{
-    font-size: 22px;
-   
+    display: flex;
+    justify-content: space-around;
+  
 
   }
   
@@ -465,21 +477,35 @@ a:hover{
 
 
     
+    .search{
+    width: 100%;
+    
+    
+    justify-content: space-between;
+
+    }
 
     .button_mobile{
       padding: 20px;
       display: inline;
-  border: none;
-  object-fit: contain;
+      background-color: rgba(0, 101, 252 );
+      
   
-  background-color: rgba(0, 101, 252 );
-  color: #ffffff;
-  font-size: 18px;
     }
 
-  .button-web button {
+  .button_mobile .fas{
+    
+    color:white;
+    
+    
+  }
 
+  
+
+  .button-web button {
+    
     display: none;
+    
   }
 
 
@@ -712,6 +738,18 @@ a:hover{
        padding: 0.5em;
         
      }
+
+     .footer-row{
+      flex-flow: column wrap;
+      
+    
+  
+    }
+
+    .list{
+      margin-left: 1em;
+
+    }
      
 	}
 
