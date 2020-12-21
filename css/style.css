@@ -150,7 +150,11 @@ footer{
   display: flex;
   justify-content: space-around;
 }
-  
+
+.stars{
+  color: rgba(0, 101, 252 );
+}
+
 #hebergement{
   background-color: #F2F2F2;
   padding: .5em;
@@ -159,10 +163,7 @@ footer{
   margin: 10px;
 }
 
-.mosaique p{
-  font-weight: bold;
-  font-size: 22px;
-}
+
   
 .populaire {
   background-color: #F2F2F2;
@@ -219,7 +220,7 @@ footer{
 }
   
 .greyText{
-  font-size: 22px;
+  font-weight: bold;
   line-height:18px;
 }
 
@@ -228,6 +229,11 @@ footer{
   flex-direction: column;
   padding: 0.5em;
   border-radius: 10%;
+}
+
+.listings_content_act p{
+font-weight: bold;
+padding: 0.5em;
 }
 
 .listings_content_pop{
