@@ -16,6 +16,11 @@ body {
 
 .logo{
   margin-right:auto;
+  
+}
+
+.logo a:hover{
+  border-top: none;
 }
 
 .nav{
@@ -29,7 +34,7 @@ body {
 }
 
 .nav a{   
-	padding: 10px;
+	padding: 12px;
 	text-decoration: none;
 	color: #444D56;
 }
@@ -38,7 +43,11 @@ body {
 	color: #0065fc;
 }
 
-a:hover{
+.inscription a{
+padding:0;
+}
+
+nav a:hover{
  color: #0065fc;
  transition-duration: 0.3s;
  border-top: 3px #0065fc solid;
@@ -93,14 +102,22 @@ a:hover{
   font-size: 18px;
 }
 
-.button-web button{
+.button-web button  {
   padding: 22px;
   border: none;
   object-fit: contain;
   background-color: rgba(0, 101, 252 );
   color: #ffffff;
   font-size: 18px;
+  
 }
+
+.button-web button a {
+  text-decoration: none;
+  color: white;
+}
+
+
 
 .button_mobile{
   display: none;
@@ -342,7 +359,7 @@ header{
   padding: 0%;
 }
 
-a:hover{
+.hebli a:hover{
   color:#0065fc;
   border-top: none;
 }
@@ -354,6 +371,7 @@ a:hover{
   border-top: none;
   margin-bottom: 0;
   color:#0065fc;
+  border-top:0;
 }
 
 .actli:hover{
@@ -362,6 +380,11 @@ a:hover{
   border-bottom: 2px #0065fc solid;
   border-top: none;
   margin-bottom: 0;
+}
+
+.actli a:hover{
+  color:#0065fc;
+  border-top: none;
 }
 
 .hebli{
@@ -402,6 +425,10 @@ a:hover{
 
 .logo{
   padding-left: 1em;
+}
+
+.logo a:hover{
+  border-top: none;
 }
 
 .slogan{
