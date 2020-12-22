@@ -525,6 +525,7 @@ header{
   width: 100%;
   box-shadow: 0.1em 0.1em 0.1em  rgba(189, 195, 199, 1);
   justify-content: space-between;
+  overflow: hidden;
   
 }
 
