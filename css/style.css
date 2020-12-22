@@ -64,17 +64,26 @@ nav a:hover{
 	display: flex;
 }
 
+.inner{
+  margin-top:20px;
+  margin-bottom:20px;
+}
 .inner_titre{
   display: inline-block;
 }
 
+.inner_titre p{
+  font-weight: bold;
+}
+
 .inner_text{
-  border: solid 1px;
+  
   border-radius: 999px;
   display: inline-block;
-  padding-right: 1em;
-  box-shadow: 0.1em 0.1em 0.1em rgba(189, 195, 199, 1);
+  padding-right:1rem ;
+  box-shadow:  0.1em 0 0.1em 0.1em  rgba(189, 195, 199, 1);
   transition: all 1s ease-out;
+  font-weight: bold;
 }
 
 .inner_text:hover{
@@ -84,10 +93,12 @@ nav a:hover{
 }
 
 .inner .inner_text .fas {
-  padding: 15px;
-  border-radius: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+  clip-path: circle();
   background-color: rgba(0, 101, 252, 0.3);
-  color: rgba(0, 101, 252 )
+  color: rgba(0, 101, 252 );
+  
 }
     
 .search .location .fa-map-marker-alt{
@@ -103,7 +114,7 @@ nav a:hover{
   display: inline-flex;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 1em;
+  border-radius: 1rem;
 }
 .search input{
   border: none;
@@ -150,6 +161,10 @@ nav a:hover{
   list-style: none;
 }
 
+i.fas.fa-info-circle{
+  color: rgba(0, 101, 252 );
+  margin-right:10px;
+}
 footer{
   background-color: #F2F2F2;
 }
@@ -159,15 +174,19 @@ footer{
   justify-content: space-around;
 }
 
-.stars{
+i.fas.fa-star{
   color: rgba(0, 101, 252 );
+}
+
+i.fas.fa-star.icon.-a{
+  color: #837f7f85;
 }
 
 #hebergement{
   background-color: #F2F2F2;
   padding: .5em;
   width: 65%;
-  border-radius: 5%;
+  border-radius: 1rem;
   margin: 10px;
 }
 
@@ -185,12 +204,16 @@ footer{
   background-color: #F2F2F2;
   padding: .5em;
   width: 33%;
-  border-radius: 5%;
+  border-radius: 1rem;
   margin: 10px;
 }
   
 .activités {
   padding: .5em;
+}
+
+.activités h2{
+  margin-left:15px;
 }
 
 #activites{
@@ -202,7 +225,7 @@ footer{
 }
 
 .listings_item{
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -214,7 +237,7 @@ footer{
   position:relative;
   overflow: hidden;
   width: 100%;
-  border-radius: 10% 0% 0% 10%; 
+  border-radius: 1rem 0% 0% 1rem; 
   min-height:150px;
   }
 
@@ -249,7 +272,7 @@ footer{
   display:flex;
   flex-direction: column;
   padding: 0.5em;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .listings_content_act p{
@@ -264,7 +287,7 @@ padding: 0.5em;
   height: auto;
   flex-direction: column;
   padding: 0.5em;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 .listings_content_pop p{
@@ -279,6 +302,8 @@ padding: 0.5em;
   
 .mosaique2{
   display: grid;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .mosaique3{
@@ -290,12 +315,17 @@ padding: 0.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+i.fas.fa-chart-line{
+font-size:2rem;
 }
 
 .main_content_pop {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 1rem;
   display: flex;
   background-color: white;
   margin: 1em auto 1em;
@@ -303,14 +333,14 @@ padding: 0.5em;
 }
 
 .main_content_hebergement{
-  border-radius: 10%;
+  border-radius: 1rem;
   background-color: white;
   margin: 10px ;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
 }
 
 .main_content_hebergement1{
-  border-radius: 10%;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -328,12 +358,12 @@ padding: 0.5em;
   width: 100%;
   height:90%;
   font-size:22px;
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
   position:relative;
 }
 
 .main_content_hebergement2{
-  border-radius: 10%;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -352,7 +382,7 @@ padding: 0.5em;
   height:100%;
   position: relative;
   font-size:22px;
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
   /* responsive*/
@@ -445,6 +475,7 @@ header{
 .actli{
   width: 50%;
 }
+
 .inscription{
   grid-column-start:2;
   grid-column-end:3;
@@ -454,7 +485,18 @@ header{
   justify-content: flex-end;
   font-weight: bold;
   padding-right: 1em;
+  
 }
+
+.inscription a:hover{
+  color: #0065fc;
+  transition: all 0.4s ease-out;
+  border-top: 3px #0065fc solid;
+ }
+
+ .inscription:hover{
+  border-top:none;
+ }
 
 .logo{
   padding-left: 1em;
@@ -521,6 +563,7 @@ header{
 .mosaique2 {
   display: flex;
   flex-flow : row wrap;
+  padding: 0;
 }
     
 .corps {
@@ -547,7 +590,6 @@ header{
 }
 
 .tendance {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -561,7 +603,7 @@ header{
 }
 
 .listings_image{
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
     
 .listings_image_heb{
@@ -570,7 +612,7 @@ header{
   width: 100%;
   max-width: 100%;
   position: absolute;
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
     
 .listings_item1{
@@ -578,7 +620,7 @@ header{
   overflow: hidden;
   width: 100%;
   height: 200px;
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
 .listings_item2{
@@ -586,32 +628,32 @@ header{
   overflow: hidden;
   width: 100%;
   height: 200px;
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
 .main_content_hebergement{
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
   width: 100%;
 }
 
 .main_content_hebergement1{
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
   width: 100%;
 }
 
 .main_content_hebergement2{
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
   width: 100%;
 }
   
 .main_content_pop {
-  border-radius: 1em;
+  border-radius: 1rem;
   display: flex;
   background-color: white;
   width: 100%;
@@ -635,11 +677,11 @@ header{
   overflow: hidden;
   width: 100%;
   height:200px;
-  border-radius: 1em 0% 0% 1em;
+  border-radius: 1rem 0% 0% 1rem;
 }
 
 .listings_image_pop{
-  border-radius: 1em 0% 0% 1em;
+  border-radius: 1rem 0% 0% 1rem;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -648,7 +690,7 @@ header{
 }
 
 .main_content {
-  border-radius: 1em;
+  border-radius: 1rem;
   display: flex;
   background-color: white;
   width: 100%;
@@ -662,7 +704,7 @@ header{
   height: auto;
   flex-direction: column;
   padding: 0.5em;
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
 .listings_item{
@@ -670,11 +712,11 @@ header{
   overflow: hidden;
   width: 100%;
   height:200px;
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
 .listings_image{
-  border-radius: 1em 1em 0% 0%;
+  border-radius: 1rem 1rem 0% 0%;
   object-fit: cover;
   height: 100%;
   width: 100%;
