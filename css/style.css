@@ -121,6 +121,11 @@ nav a:hover{
   font-size: 18px;
 }
 
+input.text{
+  font-weight: bold;
+  color:black;
+}
+
 .button-web button  {
   padding: 22px;
   border: none;
@@ -128,12 +133,13 @@ nav a:hover{
   background-color: rgba(0, 101, 252 );
   color: #ffffff;
   font-size: 18px;
-  
+  cursor: pointer;
 }
 
 .button-web button a {
   text-decoration: none;
   color: white;
+  
 }
 
 
@@ -167,6 +173,11 @@ i.fas.fa-info-circle{
 }
 footer{
   background-color: #F2F2F2;
+}
+
+.list ul li a{
+  text-decoration: none;
+  color: #444D56;
 }
 
 .footer-row{
@@ -344,7 +355,7 @@ font-size:2rem;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 5px;
+  margin: 10px;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
   grid-column-start: 1; 
   grid-column-end: 1; 
@@ -367,7 +378,7 @@ font-size:2rem;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 5px;
+  margin: 10px;
   box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
   grid-column-start: 3; 
   grid-column-end: 3; 
@@ -522,6 +533,7 @@ header{
   padding:20px;
   display:inline;
   background-color: rgba(0, 101, 252 );
+  cursor: pointer;
 }
 
 .button_mobile .fas{
@@ -538,10 +550,10 @@ header{
 }
     
 .inner_text{
-  border:solid 1px;
   margin: 5px;
   border-radius: 999px;
   max-width: max-content;
+  box-shadow:  0.1em 0 0.1em 0.1em  rgba(189, 195, 199, 1);
 }
 
 .inner_titre{
@@ -742,6 +754,8 @@ input::placeholder {
   color:black;
   font-weight: bold;
 }
+
+
 
 .text{
   box-sizing: border-box;
