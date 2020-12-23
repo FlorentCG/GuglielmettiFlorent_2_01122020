@@ -16,7 +16,6 @@ body {
 
 .logo{
   margin-right:auto;
-  
 }
 
 .logo a:hover{
@@ -81,9 +80,10 @@ nav a:hover{
   border-radius: 999px;
   display: inline-block;
   padding-right:1rem ;
-  box-shadow:  0.1em 0 0.1em 0.1em  rgba(189, 195, 199, 1);
+  box-shadow:  0.1rem 0 0.1rem 0.1rem  rgba(189, 195, 199, 1);
   transition: all 1s ease-out;
   font-weight: bold;
+  margin-right: 1rem;
 }
 
 .inner_text:hover{
@@ -95,7 +95,7 @@ nav a:hover{
 .inner .inner_text .fas {
   font-size: 1rem;
   padding: 1rem;
-  clip-path: circle();
+  border-radius: 49%;
   background-color: rgba(0, 101, 252, 0.3);
   color: rgba(0, 101, 252 );
   
@@ -109,13 +109,14 @@ nav a:hover{
 
 .search{
   border: 1px solid #c4c4c4;
-  box-shadow: 0.1em 0.1em 0.1em rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   overflow: hidden;
   display: inline-flex;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 1rem;
 }
+
 .search input{
   border: none;
   font-size: 18px;
@@ -340,14 +341,14 @@ font-size:2rem;
   display: flex;
   background-color: white;
   margin: 1em auto 1em;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
 }
 
 .main_content_hebergement{
   border-radius: 1rem;
   background-color: white;
   margin: 10px ;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
 }
 
 .main_content_hebergement1{
@@ -356,7 +357,7 @@ font-size:2rem;
   flex-direction: column;
   background-color: white;
   margin: 10px;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   grid-column-start: 1; 
   grid-column-end: 1; 
   grid-row-start: 1; 
@@ -379,7 +380,7 @@ font-size:2rem;
   flex-direction: column;
   background-color: white;
   margin: 10px;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   grid-column-start: 3; 
   grid-column-end: 3; 
   grid-row-start: 1; 
@@ -523,7 +524,7 @@ header{
 }
 .search{
   width: 100%;
-  box-shadow: 0.1em 0.1em 0.1em  rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem  rgba(189, 195, 199, 1);
   justify-content: space-between;
   overflow: hidden;
   
@@ -554,12 +555,12 @@ header{
   margin: 5px;
   border-radius: 999px;
   max-width: max-content;
-  box-shadow:  0.1em 0 0.1em 0.1em  rgba(189, 195, 199, 1);
+  box-shadow:  0.1rem 0 0.1rem 0.1rem  rgba(189, 195, 199, 1);
 }
 
 .inner_titre{
-  padding-right:0.5em;
-  padding-left:0.5em;
+  padding-right:0.5rem;
+  padding-left:0.5rem;
 }
 
 .info{
@@ -647,21 +648,21 @@ header{
 .main_content_hebergement{
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   width: 100%;
 }
 
 .main_content_hebergement1{
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   width: 100%;
 }
 
 .main_content_hebergement2{
   border-radius: 1rem;
   background-color: white;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
   width: 100%;
 }
   
@@ -670,7 +671,7 @@ header{
   display: flex;
   background-color: white;
   width: 100%;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
 }
 
 .listings_content_pop{
@@ -707,7 +708,7 @@ header{
   display: flex;
   background-color: white;
   width: 100%;
-  box-shadow: 5px 5px 5px rgba(189, 195, 199, 1);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
 }
 
 .listings_content{
