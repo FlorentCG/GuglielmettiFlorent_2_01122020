@@ -45,19 +45,13 @@ nav a:hover{
   border-top: 3px #0065fc solid;
  }
 
-.inscription p{
+.inscription a{
 	color: #0065fc;
 }
 
-.inscription a{
-  padding:0;
-}
 
-.inscription:hover{
-  color: #0065fc;
-  transition: all 0.4s ease-out;
-  border-top: 3px #0065fc solid;
- }
+
+
 
 .menu{
 	display: flex;
@@ -420,7 +414,7 @@ header{
 .nav a{   
   padding: 0%;
   text-decoration: none;
-  color: #444D56;
+  
   padding-bottom: 0.5em;
   font-weight: bold;
 }
@@ -437,6 +431,7 @@ header{
 .hebli a:hover{
   color:#0065fc;
   border-top: none;
+  
 }
 
 .hebli:hover{
