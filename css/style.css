@@ -84,6 +84,7 @@ nav a:hover{
 	color: #1a1c1d;
   background-color: #158ad8;
   transition-duration: 1s;
+  cursor: pointer;
 }
 
 .inner .inner_text .fas {
