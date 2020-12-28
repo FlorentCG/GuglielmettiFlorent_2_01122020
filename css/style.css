@@ -741,7 +741,7 @@ header{
 }
 
 .footer-row{
-  flex-flow: column wrap;
+  display: block;
 }
 
 .list{
